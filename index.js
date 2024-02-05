@@ -114,7 +114,7 @@ bot.onMessage(async (channel, user, message, self) => {
 
     // Dance command//////////////////////////////////////////////////////////////////////
     if (message.startsWith("leniva1Cheer")) {
-        if (user.username==DeviIic) {
+        if (user.username=="DeviIic") {
             const response = "leniva1Cheer";
             bot.say(channel, response);
         } else {
