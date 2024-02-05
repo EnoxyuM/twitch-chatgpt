@@ -118,7 +118,7 @@ bot.onMessage(async (channel, user, message, self) => {
             const response = "leniva1Cheer";
             bot.say(channel, response);
         } else {
-            const response = "nop";
+            const response = user.username;
             bot.say(channel, response);
         }
     }
