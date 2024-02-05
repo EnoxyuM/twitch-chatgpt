@@ -112,6 +112,16 @@ bot.connect(
 bot.onMessage(async (channel, user, message, self) => {
     if (self) return;
 
+    // Dance command//////////////////////////////////////////////////////////////////////
+    if (message.startsWith("leniva1Cheer")) {
+        if (user.username==DeviIic) {
+            const response = "leniva1Cheer";
+            bot.say(channel, response);
+        } else {
+            const response = "nop";
+            bot.say(channel, response);
+        }
+    }
     // check if message is a command started with !COMMAND_NAME (e.g. !gpt)
     if (message.startsWith(COMMAND_NAME)) {
         // get text
